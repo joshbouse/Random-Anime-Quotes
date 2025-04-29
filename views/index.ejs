@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Quotes</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <h1>Anime Quotes</h1>
+    <div class="card">
+        <p class="quote-text">
+            <%= locals.quote %>
+        </p>
+        <% if (locals.error) { %>
+            <div class="error-message">
+                <p><%= locals.error %></p>
+            </div>
+        <% } %>
+    </div>
+    <p class="quote-context character"> <%= locals.character %> </p>
+    <p class="quote-context anime"> <%= locals.anime %> </p>
+    <img src="images/Jotaro-PNG-Cutout.png" alt="Jotaro Kujo" class="character-image">
+
+    <footer> <a href="https://www.linkedin.com/in/joshuabouse/">LinkedIn</a><a href="https://github.com/joshbouse">GitHub</a> </footer>
+
+</body>
+</html>
